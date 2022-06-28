@@ -1,0 +1,15 @@
+#include<Servo.h>
+
+Servo ESC; // create servo object to control the ESC
+
+void setup(){
+ESC.attach(9,1000,2000); // (pin,min pulse width,max pulse width in microseconds)
+ESC.writeMicroseconds(1000);
+
+}
+
+void loop(){
+positionValue = map(360,0,1000,2000);
+ESC.writeMicrodeconds(positionValue);
+
+}
