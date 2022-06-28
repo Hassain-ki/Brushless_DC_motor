@@ -17,6 +17,3 @@ The PWM signal determines the speed of the motor.
 Since the servo library generates PWM signal similars to the one that is accepted by the ESC 30A, the ESC 30A is controled by a servo object.
 
 the code runs the motor and changes its speed perodically from low to high speed and visa versa
-
-
-https://github.com/Hassain-ki/Brushless_DC_motor.git
