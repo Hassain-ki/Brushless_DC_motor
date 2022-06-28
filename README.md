@@ -19,3 +19,4 @@ Since the servo library generates PWM signal similars to the one that is accepte
 the code runs the motor and changes its speed perodically from low to high speed and visa versa
 
 
+https://github.com/Hassain-ki/Brushless_DC_motor.git
