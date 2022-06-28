@@ -1,15 +1,30 @@
 #include<Servo.h>
 
 Servo ESC; // create servo object to control the ESC
+accleeration = 1; // to control the direction of the speed
+speedRPM = 0; // 0 degree correspond to min RPM speed , 180 degree correspond to max RPM speed
 
 void setup(){
 ESC.attach(9,1000,2000); // (pin,min pulse width,max pulse width in microseconds)
-ESC.writeMicroseconds(1000);
 
 }
 
 void loop(){
-positionValue = map(360,0,1000,2000);
-ESC.writeMicrodeconds(positionValue);
+
+
+ESC.write(speedRPM);
+
+if(speedRPM == 180){
+accleeration = 2;
+}
+if(speedRPM == 0){
+accleeration = 1;
+}
+
+if(accleeration == 1){
+speedRPM++;
+}else{
+speedRPM--;
+}
 
 }
