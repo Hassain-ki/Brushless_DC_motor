@@ -5,7 +5,7 @@ accleeration = 1; // to control the direction of the speed
 speedRPM = 0; // 0 degree correspond to min RPM speed , 180 degree correspond to max RPM speed
 
 void setup(){
-Pinmode(8,OUTPUT);
+pinMode(8,OUTPUT);
 ESC.attach(8,1000,2000); // (pin,min pulse width,max pulse width in microseconds)
 
 }
